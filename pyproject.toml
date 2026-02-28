@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "neurocore-skill-neuroweave"
+version = "0.1.0"
+description = "NeuroWeave knowledge graph memory skill for NeuroCore"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.13"
+authors = [{ name = "NeuroCore Contributors" }]
+keywords = [
+    "neurocore",
+    "neuroweave",
+    "knowledge-graph",
+    "memory",
+    "agentic-ai",
+    "skill",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "neurocore>=0.1.0",
+    "neuroweave>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/alexh-scrt/neurocore-skill-neuroweave"
+Repository = "https://github.com/alexh-scrt/neurocore-skill-neuroweave"
+"Bug Tracker" = "https://github.com/alexh-scrt/neurocore-skill-neuroweave/issues"
+Documentation = "https://neurocore-skill-neuroweave.readthedocs.io"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-asyncio>=0.24",
+    "pytest-cov>=7.0.0",
+    "pytest-mock>=3.14",
+]
+
+[project.entry-points."neurocore.skills"]
+neuroweave = "neurocore_skill_neuroweave:NeuroWeaveSkill"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/neurocore_skill_neuroweave"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+asyncio_mode = "auto"
