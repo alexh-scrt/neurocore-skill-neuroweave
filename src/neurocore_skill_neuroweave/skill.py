@@ -41,7 +41,7 @@ class NeuroWeaveSkill(Skill):
 
     skill_meta: ClassVar[SkillMeta] = SkillMeta(
         name="neuroweave",
-        version="0.1.0",
+        version="0.1.1",
         description="Real-time knowledge graph memory for agentic AI",
         author="NeuroCore Contributors",
         requires=["neuroweave>=0.1.0"],
