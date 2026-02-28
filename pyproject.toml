@@ -27,7 +27,7 @@ classifiers = [
 ]
 dependencies = [
     "neurocore>=0.1.0",
-    "neuroweave>=0.1.0",
+    "neuroweave-python>=0.1.0",
 ]
 
 [project.urls]
