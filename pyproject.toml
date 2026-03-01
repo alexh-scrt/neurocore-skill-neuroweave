@@ -26,7 +26,7 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-    "neurocore>=0.1.0",
+    "neurocore-ai>=0.1.0",
     "neuroweave-python>=0.1.0",
 ]
 
@@ -44,7 +44,7 @@ dev = [
     "pytest-mock>=3.14",
 ]
 
-[project.entry-points."neurocore.skills"]
+[project.entry-points."neurocore_ai.skills"]
 neuroweave = "neurocore_skill_neuroweave:NeuroWeaveSkill"
 
 [tool.hatch.build.targets.wheel]

@@ -13,7 +13,7 @@ The async NeuroWeave API is bridged to sync via ``asyncio.run()``.
 The NeuroWeave instance is created on ``init(config)`` and started
 lazily on the first ``process()`` call.
 
-Config keys (passed via neurocore.yaml or blueprint):
+Config keys (passed via neurocore_ai.yaml or blueprint):
     mode: str — "process", "query", or "context" (default: "context")
     llm_provider: str — "mock", "anthropic", or "openai" (default: "mock")
     llm_model: str — LLM model identifier
@@ -28,7 +28,7 @@ from typing import Any, ClassVar
 
 from flowengine import FlowContext
 
-from neurocore.skills.base import Skill, SkillMeta
+from neurocore_ai.skills.base import Skill, SkillMeta
 
 
 class NeuroWeaveSkill(Skill):

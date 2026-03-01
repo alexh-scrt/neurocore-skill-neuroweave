@@ -1,7 +1,7 @@
 """NeuroWeave skill for NeuroCore.
 
 Bridges NeuroWeave's knowledge graph memory into NeuroCore's
-skill system. Registers via the `neurocore.skills` entry point.
+skill system. Registers via the `neurocore_ai.skills` entry point.
 
 Usage in a blueprint:
     components:
