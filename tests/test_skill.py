@@ -103,7 +103,7 @@ class TestSkillMeta:
         assert NeuroWeaveSkill.skill_meta.name == "neuroweave"
 
     def test_version(self):
-        assert NeuroWeaveSkill.skill_meta.version == "0.1.0"
+        assert NeuroWeaveSkill.skill_meta.version == "0.2.0"
 
     def test_provides(self):
         assert "neuroweave_result" in NeuroWeaveSkill.skill_meta.provides
@@ -118,7 +118,7 @@ class TestSkillMeta:
         assert "knowledge-graph" in NeuroWeaveSkill.skill_meta.tags
 
     def test_requires(self):
-        assert "neuroweave>=0.1.0" in NeuroWeaveSkill.skill_meta.requires
+        assert "neuroweave>=0.2.0" in NeuroWeaveSkill.skill_meta.requires
 
 
 # --- Process mode tests ---

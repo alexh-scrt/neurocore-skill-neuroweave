@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "neurocore-skill-neuroweave"
-version = "0.1.1"
+version = "0.2.0"
 description = "NeuroWeave knowledge graph memory skill for NeuroCore"
 readme = "README.md"
 license = "Apache-2.0"
@@ -26,8 +26,8 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-    "neurocore-ai>=0.1.0",
-    "neuroweave-python>=0.1.0",
+    "neurocore-ai>=0.2.0",
+    "neuroweave-python>=0.2.0",
 ]
 
 [project.urls]
